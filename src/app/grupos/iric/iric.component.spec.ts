@@ -19,3 +19,4 @@ describe('IricComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+/* alan */
