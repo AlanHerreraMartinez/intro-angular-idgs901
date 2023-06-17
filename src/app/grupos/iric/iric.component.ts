@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IAlumnosIric } from '../alumnos-iric';
 
 @Component({
   selector: 'app-iric',
@@ -7,8 +8,18 @@ import { Component } from '@angular/core';
 })
 export class IricComponent {
 
+  imageWidth:Number=50;
+  imageMargin:number=2;
+  muestraImg:boolean=true;
+  listFilter:string='1234';
 
-  alumnosIric:any[]=[
+  showImage():void{
+    this.muestraImg=!this.muestraImg
+  }
+  // si esta en true lo ponga en false y vicerversa
+
+  
+  alumnosIric:IAlumnosIric[]=[
     {
       matricula:1234,
       nombre:'Michael Jackson',

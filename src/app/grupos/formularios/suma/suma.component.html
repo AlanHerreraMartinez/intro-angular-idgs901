@@ -1,0 +1,21 @@
+<p>suma works!</p>
+<!-- div.row>div.col-6*2 -->
+<div class="row">
+    <div class="col-6">
+        <!-- div.emb-3*3 -->
+        <div class="emb-3">
+            <label class="form-label" for="">Numero1</label>
+            <input class="form-control" [(ngModel)]="num1" name="num1" placeholder="Numero1">
+        </div>
+        <div class="emb-3">
+            <label class="form-label" for="">Numero2</label>
+            <input class="form-control" [(ngModel)]="num2" name="num2" placeholder="Numero2">
+        </div>
+        <div class="emb-3">
+            <button (click)="sumar()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+</div>
